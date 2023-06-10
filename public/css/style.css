@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+
+    height: 100vh;
+    width: 100%;
+}
+
+#bodyHome {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    margin-top: 56px;
+}
+
+#mainHome {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+nav {
+    background-color: #004385;
+    color: white;
+}
+
+.dropdown-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    transition: 0.3s;
+    width: 15%;
+    background-color: #ffd74b;
+    color: #004385;
+}
+
+.homeSpanned {
+    background-color: #004385;
+}
+
+.homeSpanned h1 {
+    color: #ffd74b;
+}
+
+.homeSpanned {
+    width: 80%;
+    transition: 0.3s;
+}
+
+
+
+
+.containerCard {
+    max-width: 90%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.containerCard .card {
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    width: 170px;
+    height: 250px;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.imageCategory {
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.imageCategory h5 {
+    margin: 10px 0;
+}
+
+.imageCategory img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* LANDING PAGE */
+#loginLogo {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+
+#loginLogo img {
+    width: 220px;
+}
+
+/* SHOW */
+#mainShow {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.showImage {
+    grid-column-start: 1;
+    margin: 40px;
+    border: 4px solid #004385;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.showCard {
+    grid-column-start: 2;
+    margin: 40px;
+}
+
+#mainShow .card {
+    border: 4px solid #004385;
+    border-radius: 10px;
+}
+
+#mainShow .card-header {
+    background-color: #004385;
+    color: #ffd74b;
+}
+
+#mainShow .card-body {
+    background-color: #ffd74b;
+    color: #004385;
+}
+
+#mainShow .card-body span {
+    background-color: #004385;
+    color: #ffd74b;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+#mainShow .card-footer {
+    background-color: #004385;
+    color: #ffd74b;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.card-footer span {
+    color: #ffd74b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonShowCard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-jual {
+    border: 2px solid #004385;
+    background-color: #004385;
+    color: #ffd74b;
+    font-weight: 500;
+}
+
+.btn-jual:hover {
+    color: #004385;
+    background-color: #ffd74b;
+    border: 2px solid #004385;
+}
+
+.form-control {
+    border: 2px solid #004385;
+}
+
+.newAndEdit-field {
+    background-color: #ffd74b;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: 3px solid #004385;
+}
+
+.newMain {
+    padding: 40px 0;
+    /* background-image: url(logoKantin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.btnEdit {
+    background-color: #ffd74b;
+    color: #004385;
+}
+
+.btnEdit:hover {
+    background-color: #ffd74b;
+    color: #004385;
+}

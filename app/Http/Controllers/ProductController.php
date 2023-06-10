@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
@@ -46,15 +47,12 @@ class ProductController extends Controller
         $formFields['user_id'] = auth()->id();
         if ($request->file('images')) {
             for ($i = 0; $i < count($request->file('images')); $i++) {
-                $imageName = time().'.'.$request->images[$i]->extension();  
-                $formImages['images'][$i] = $imageName;
-                $request->images[$i]->move(public_path('images'), $imageName);
+                $formFields['images'][$i] =  $request->file('images')[$i]->storeOnCloudinary('kantinkejujuran')->getSecurePath();
             }
         }
         
 
         $product = Product::create($formFields);
-        $product['images'] =  $formImages['images'];
         $product->save();
         // public/images/...png
 
@@ -82,9 +80,21 @@ class ProductController extends Controller
             'wa' => 'required',
             'category'=>'required',
         ]);
+        $oldImages = $product['images'];
+
         $formFields['user_id'] = auth()->id();
+        if ($request->file('images')) {
+            for ($i = 0; $i < count($request->file('images')); $i++) {
+                $formFields['images'][$i] =  $request->file('images')[$i]->storeOnCloudinary('kantinkejujuran')->getSecurePath();
+            }
+        }
+
         $product->update($formFields);
+        if ($oldImages) {
+            $product['images'] = array_merge($product['images'], $oldImages);
+        }
         $user = User::find(auth()->id());
+        
         detail_edit::create(
             ['userIdAndproductId' => $user->nim . '-'. $product->jurusan .'-'. $product->id]
         );

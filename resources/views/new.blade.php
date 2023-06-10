@@ -12,15 +12,15 @@
                 @csrf
                 <div class="form-group mb-3">
                     <label class="form-label" for="jurusan">Jurusan</label>
-                    <input type="text" class="form-control" id="jurusan" name="jurusan">
+                    <input type="text" class="form-control" id="jurusan" name="jurusan" required>
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="nama">Nama Makanan</label>
-                    <input type="text" class="form-control" id="nama" name="name">
+                    <input type="text" class="form-control" id="nama" name="name" required>
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="stok" >Stok</label>
-                    <input type="text" class="form-control" id="stok"name="stock">
+                    <input type="text" class="form-control" id="stok"name="stock" required>
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="deskripsi" >Deskripsi</label>
@@ -33,12 +33,12 @@
                 <label class="form-label" for="harga">Harga</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">Rp</span>
-                    <input type="text" id="harga" class="form-control" name="price">
+                    <input type="text" id="harga" class="form-control" name="price" required>
                 </div>
                 <label class="form-label" for="noWA">No WA</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">+62</span>
-                    <input type="text" class="form-control" id="noWA" name="wa">
+                    <input type="text" class="form-control" id="noWA" name="wa" required>
                 </div>
                 <div class="mb-3">
                     <select name="category" class="form-select" aria-label="Default select example">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="images">Tambah Gambar *maks 1MB</label>
-                    <input type="file" class="form-control" name="images[]" id="images" multiple>
+                    <input type="file" class="form-control" name="images[]" id="images" multiple required>
                 </div>
                 <button type="submit" class="btn btnNewCustom btn-sm btn-jual mb-3">Unggah</button>
             </form>

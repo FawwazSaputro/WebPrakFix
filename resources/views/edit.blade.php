@@ -17,11 +17,11 @@
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="nama">Nama Makanan</label>
-                    <input type="text" value="{{ $product->name }}" class="form-control" id="nama" name="name">
+                    <input type="text" value="{{ $product->name }}" class="form-control" id="nama" name="name" required>
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="stok">Stok</label>
-                    <input type="text"value="{{ $product->stock }}" class="form-control" id="stok" name="stock">
+                    <input type="text"value="{{ $product->stock }}" class="form-control" id="stok" name="stock" required>
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="deskripsi">Deskripsi</label>
@@ -30,12 +30,12 @@
                 <label class="form-label" for="harga">Harga</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">Rp</span>
-                    <input type="text" id="harga" name="price" value="{{ $product->price }}"id="harga" class="form-control">
+                    <input type="text" id="harga" name="price" value="{{ $product->price }}"id="harga" class="form-control" required>
                 </div>
                 <label class="form-label" for="noWA">No WA</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">+62</span>
-                    <input type="text" id="noWA" name="wa" value="{{ $product->wa }}"id="noWA" class="form-control">
+                    <input type="text" id="noWA" name="wa" value="{{ $product->wa }}"id="noWA" class="form-control" required>
                 </div>
                 <div class="mb-3">
                     <select name="category" class="form-select" aria-label="Default select example" >

@@ -43,6 +43,8 @@ class ProductController extends Controller
             'price' => ['required', 'numeric'],
             'wa' => 'required',
             'category' => 'required',
+            'image' => 'required',
+
         ]);
         $formFields['user_id'] = auth()->id();
         if ($request->file('images')) {
@@ -79,6 +81,8 @@ class ProductController extends Controller
             'price' => ['required', 'numeric'],
             'wa' => 'required',
             'category'=>'required',
+            'image' => 'required',
+            
         ]);
         $oldImages = $product['images'];
 

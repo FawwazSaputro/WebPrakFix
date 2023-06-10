@@ -49,7 +49,7 @@
                       </select>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="images">Tambah Gambar</label>
+                    <label class="form-label" for="images">Tambah Gambar *maks 1MB</label>
                     <input type="file" class="form-control" name="images[]" id="images" multiple>
                 </div>
                 <button type="submit" class="btn btnNewCustom btn-sm btn-jual mb-3">Unggah</button>

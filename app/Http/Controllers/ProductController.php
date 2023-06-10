@@ -84,9 +84,9 @@ class ProductController extends Controller
 
         $formFields['user_id'] = auth()->id();
         if ($request->file('images')) {
-            for ($i = 0; $i < count($request->file('images')); $i++) {
-                $formFields['images'][$i] =  $request->file('images')[$i]->storeOnCloudinary('kantinkejujuran')->getSecurePath();
-            }
+            // for ($i = 0; $i < count($request->file('images')); $i++) {
+            //     $formFields['images'][$i] =  $request->file('images')[$i]->storeOnCloudinary('kantinkejujuran')->getSecurePath();
+            // }
         }
 
         $product->update($formFields);

@@ -35,7 +35,7 @@
                 <a href="/products/{{ $product->id }}">
                     <div class="card">
                         <div class="imageCategory">
-                            <img src="{{ asset('images/'.$product->images[0]) }}" alt="">
+                            <img src="{{ $product->images[0] }}" alt="">
                             <h5>{{ $product->name }}</h5>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                 <a href="/products/{{ $product->id }}">
                     <div class="card">
                         <div class="imageCategory">
-                            <img src="{{ asset('images/'.$product->images[0]) }}" alt="">
+                            <img src="{{ $product->images[0] }}" alt="">
                             <h5>{{ $product->name }}</h5>
                         </div>
                     </div>

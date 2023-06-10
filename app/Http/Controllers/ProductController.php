@@ -43,7 +43,6 @@ class ProductController extends Controller
             'price' => ['required', 'numeric'],
             'wa' => 'required',
             'category' => 'required',
-            'image' => 'required',
 
         ]);
         $formFields['user_id'] = auth()->id();
@@ -81,8 +80,7 @@ class ProductController extends Controller
             'price' => ['required', 'numeric'],
             'wa' => 'required',
             'category'=>'required',
-            'image' => 'required',
-            
+
         ]);
         $oldImages = $product['images'];
 

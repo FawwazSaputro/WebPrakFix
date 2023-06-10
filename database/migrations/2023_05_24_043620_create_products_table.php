@@ -25,7 +25,7 @@ return new class extends Migration
             $table->integer('price');
             $table->string('wa');
             $table->string('category');
-            $table->json('images')->nullable();
+            $table->json('images');
         });
     }
 

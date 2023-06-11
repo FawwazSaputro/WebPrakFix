@@ -6,7 +6,7 @@
     <form action="/login" method="POST">
         @csrf 
         <div id="loginLogo">
-            <img src="{{ asset('images/LogoNew.png') }}" class="rounded" alt="">
+            <img src="{{ asset('images/LogoKanJurFix.png') }}" class="rounded" alt="">
         </div>
         <div id="loginForm" class="col-6 offset-3">
             <div class="form-floating mb-3">

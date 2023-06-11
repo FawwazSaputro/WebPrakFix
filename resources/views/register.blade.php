@@ -4,7 +4,7 @@
     @include('partials._nav')
     <div class="container col-6 offset-3">
         <div id="loginLogo">
-            <img src="{{ asset('images/LogoNew.png') }}" class="rounded" alt="">
+            <img src="{{ asset('images/LogoKanJurFix.png') }}" class="rounded" alt="">
         </div>
         <div id="loginForm" class="col-6 offset-3 py-5">
             <form action="/register" method="POST">
